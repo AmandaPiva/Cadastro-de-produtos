@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InterProd } from '../produto';
+
 
 @Component({
   selector: 'app-produtos',
@@ -7,6 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutosComponent implements OnInit {
 
+  //Trazendo a interface criada do produto.ts
+  interface: InterProd = {
+    id: 1,
+    name: "Geladeira",
+    type: "Eletrodomésticos",
+    preco: 1500.00,
+    marca: "LG"
+  }
  
   constructor() { }
 
