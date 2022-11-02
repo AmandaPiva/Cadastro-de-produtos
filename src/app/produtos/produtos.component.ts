@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InterProd } from '../produto';
+import { ProdutoServiceService } from '../produto-service.service';
 
 
 @Component({
@@ -9,18 +10,19 @@ import { InterProd } from '../produto';
 })
 export class ProdutosComponent implements OnInit {
 
-  //Trazendo a interface criada do produto.ts
-  interface: InterProd = {
-    id: 1,
-    name: "Geladeira",
-    type: "Eletrodomésticos",
-    preco: 1500.00,
-    marca: "LG"
+  //Trazendo o mock de produtos criado do mock-produtos.ts
+  interface: InterProd[] = [];
+
+  getProdutos(): void{
+    this.produtoService.getProdutos()
+      .subscribe(produto => this.interface = produto)
   }
+   
  
-  constructor() { }
+  constructor(private produtoService: ProdutoServiceService) { }
 
   ngOnInit(): void {
+    this.getProdutos();
   }
 
 }
