@@ -25,4 +25,10 @@ export class ProdutosComponent implements OnInit {
     this.getProdutos();
   }
 
+  //adicionar o onSelect
+  selectProd?: InterProd;
+  onSelect(produto: InterProd): void{
+    this.selectProd = produto;
+  }
+
 }
