@@ -26,9 +26,9 @@ export class ProdutosComponent implements OnInit {
   }
 
   //adicionar o onSelect
-  selectProd?: InterProd;
+  selectedProd?: InterProd;
   onSelect(produto: InterProd): void{
-    this.selectProd = produto;
+    this.selectedProd = produto;
   }
 
 }

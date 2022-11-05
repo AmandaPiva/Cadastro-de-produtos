@@ -2,7 +2,7 @@
 
 <table class="produtos_class">
     <tr *ngFor="let prodList of interface">
-        <button type="button" (click)="onSelect(prodList)">
+        <button type="button" (click)="onSelect(prodList)" [class.selected]="prodList === selectedProd">
             <td class="id">Id: {{prodList.id}},</td>
             <td class="name">Nome: {{prodList.name}},</td>
             <td class="type">Tipo: {{prodList.type}},</td>
@@ -10,4 +10,6 @@
             <td class="marca">Marca: {{prodList.marca}},</td>
         </button>
     </tr>
+
+    <app-produto-detalhes [produto]="selectedProd"></app-produto-detalhes>
 </table>
