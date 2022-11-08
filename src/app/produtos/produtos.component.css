@@ -1,0 +1,36 @@
+
+h2{
+    padding: 2em;
+}
+
+table{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F2F3B3;
+    padding: 2em;
+
+    width: 800px;
+    height: 800px;
+
+    margin-left: 2em;
+}
+
+table button{
+    background: #262626;
+    color: #F2F3B3;
+
+    width: 600px;
+    height: 80px;
+
+    margin-top: 15px;
+
+    padding: 1em;
+
+    border-style: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    box-shadow: 5px 5px 5px #A66933;
+}
