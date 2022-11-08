@@ -1,4 +1,9 @@
 
+body{
+    display: flex;
+    flex-direction: row;
+}
+
 h2{
     padding: 2em;
 }
@@ -7,23 +12,23 @@ table{
     display: flex;
     flex-direction: column;
 
-    background-color: #F2F3B3;
     padding: 2em;
 
-    width: 800px;
+    width: 700px;
     height: 800px;
 
     margin-left: 2em;
 }
 
 table button{
-    background: #262626;
-    color: #F2F3B3;
+    background: #6C718C;
+    color: #ffff;
 
     width: 600px;
     height: 80px;
 
     margin-top: 15px;
+    margin-left: 20px;
 
     padding: 1em;
 
@@ -32,5 +37,5 @@ table button{
 
     cursor: pointer;
 
-    box-shadow: 5px 5px 5px #A66933;
+    box-shadow: 5px 5px 5px #313640;
 }

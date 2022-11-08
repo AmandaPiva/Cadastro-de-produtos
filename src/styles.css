@@ -8,17 +8,23 @@
 }
 
 body{
+    width: 100vw;
+    height: 130vh;
+
+    background: #ffff;
+
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+}
 
-    background: #F2F3B3;
+.container{
+    display: flex;
+    flex-direction: row;
 }
 
 h1{
     font-weight: 500;
-    color: #D9933D;
+    color: #0D0D0D;
 
     display: flex;
     flex-direction: column;
@@ -29,5 +35,5 @@ h1{
 
 h2{
     font-weight: 500;
-    color: #262626;
+    color: #313640;
 }
