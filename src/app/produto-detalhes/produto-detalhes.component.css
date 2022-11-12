@@ -1,5 +1,7 @@
 div{
-    margin-left: 50px;
+    margin-left: 30px;
+
+    width: 100%;
 }
 
 .container{
@@ -9,8 +11,8 @@ div{
     background: rgb(251, 251, 251);
     padding: 2em;
 
-    width: 800px;
-    height: 800px;
+    width: 155%;
+    height: 150%;
 
     margin-top: 50px;
 
@@ -24,6 +26,7 @@ div{
     flex-direction: column;
 
     padding: 2rem;
+    padding-left: 0;
 }
 
 h2{
@@ -64,5 +67,5 @@ h2{
     margin-top: 20px;
     margin-left: 20px;
 
-    width: 600px;
+    width: 85%;
 }
