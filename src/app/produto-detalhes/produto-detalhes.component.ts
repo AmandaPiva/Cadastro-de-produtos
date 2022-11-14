@@ -1,5 +1,6 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { InterProd } from '../produto';
+
 
 @Component({
   selector: 'app-produto-detalhes',
@@ -14,5 +15,21 @@ export class ProdutoDetalhesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  interface: InterProd[] = [];
+
+  delete(prod:InterProd): void{
+    console.log(prod.id);
+    let i = 0;
+
+    this.interface.forEach(item => {
+      if(item === prod){
+          this.interface.splice(i, 1);
+      }
+      i++;
+    })
+
+  }
+
 
 }

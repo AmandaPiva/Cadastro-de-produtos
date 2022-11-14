@@ -31,4 +31,7 @@ export class ProdutosComponent implements OnInit {
     this.selectedProd = produto;
   }
 
+
+  
+
 }
