@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { InterProd } from '../produto';
-import { ProdutoServiceService } from '../produto-service.service';
+import { ProdutoServiceService } from '../produto-service.service'; //importando o services 
 
 @Component({
   selector: 'app-produto-detalhes',
@@ -9,19 +9,20 @@ import { ProdutoServiceService } from '../produto-service.service';
 })
 export class ProdutoDetalhesComponent implements OnInit {
 
-  @Input() produto?: InterProd;
+  @Input() produto?: InterProd; //decorator identificador de dados que estão sendo passados pelo componente pai para o filho
   
-  getProdutos(): void{
+  getProdutos(): void{  //Construtor (obrigatório trazer pois ele contém o código que pega os dados do Back End e trás ao componente)
     this.produtoService.getProdutos()
       .subscribe(produto => this.interface = produto)
   }
 
   constructor(private produtoService: ProdutoServiceService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {  //Onde de fato injetamos o nosso contructor
     this.getProdutos();
   }
 
+  //função botão excluir
   interface: InterProd[] = [];
 
   delete(prod:InterProd): void{
@@ -30,9 +31,9 @@ export class ProdutoDetalhesComponent implements OnInit {
 
     this.interface.forEach(item => {
       if(item === prod){
-          this.interface.splice(i, 1);
+          this.interface.splice(i, 1);  //função splice que exclui o elemento do array que está sendo percorrido
       }
-      i++;
+      i++;  //Está sendo verificado pelo índice
     })
 
   }
