@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { InterProd } from '../produto';
-
+import { ProdutoServiceService } from '../produto-service.service';
 
 @Component({
   selector: 'app-produto-detalhes',
@@ -10,10 +10,16 @@ import { InterProd } from '../produto';
 export class ProdutoDetalhesComponent implements OnInit {
 
   @Input() produto?: InterProd;
+  
+  getProdutos(): void{
+    this.produtoService.getProdutos()
+      .subscribe(produto => this.interface = produto)
+  }
 
-  constructor() { }
+  constructor(private produtoService: ProdutoServiceService) { }
 
   ngOnInit(): void {
+    this.getProdutos();
   }
 
   interface: InterProd[] = [];
