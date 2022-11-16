@@ -69,3 +69,22 @@ h2{
 
     width: 85%;
 }
+
+.removeProd{
+    margin-top: 50px;
+    padding: 2rem;
+}
+
+.removeProd button{
+    width: 50%;
+    height: 25%;
+
+    padding: 0.5em;
+
+    background: #0D0D0D;
+    color: aliceblue;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
