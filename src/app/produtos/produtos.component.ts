@@ -13,6 +13,9 @@ export class ProdutosComponent implements OnInit {
   //Trazendo o mock de produtos criado do mock-produtos.ts
   interface: InterProd[] = [];
 
+  //Novo objeto do tipo ProdNew para cadastro de novos produtos
+  
+
   getProdutos(): void{
     this.produtoService.getProdutos()
       .subscribe(produto => this.interface = produto)
@@ -32,6 +35,5 @@ export class ProdutosComponent implements OnInit {
   }
 
 
-  
 
 }

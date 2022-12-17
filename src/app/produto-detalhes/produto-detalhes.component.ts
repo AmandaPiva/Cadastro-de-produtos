@@ -16,6 +16,14 @@ export class ProdutoDetalhesComponent implements OnInit {
       .subscribe(produto => this.interface = produto)
   }
 
+  prodNew: InterProd = {
+    id: 0,
+    name: '',
+    type: '',
+    preco: 0,
+    marca: ''
+}
+
   constructor(private produtoService: ProdutoServiceService) { }
 
   ngOnInit(): void {  //Onde de fato injetamos o nosso contructor
@@ -39,4 +47,8 @@ export class ProdutoDetalhesComponent implements OnInit {
   }
 
 
+  //função adicionar produto
+ create(): void{
+
+ } 
 }
