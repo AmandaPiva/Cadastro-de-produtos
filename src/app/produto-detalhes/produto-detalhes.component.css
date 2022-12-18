@@ -80,6 +80,7 @@ h2{
     height: 25%;
 
     padding: 0.5em;
+    margin: auto;
 
     background: #0D0D0D;
     color: aliceblue;
@@ -88,3 +89,4 @@ h2{
 
     cursor: pointer;
 }
+
