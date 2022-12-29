@@ -49,15 +49,15 @@ table button{
     display: flex;
     flex-direction: column;
 
-    margin-top: 8%;
-    margin-right: 10%;
+    margin-top: 16%;
+    margin-right: 8%;
 
     float: right;
 
-    background: rgb(251, 251, 251);
+    background: rgb(241, 241, 241);
 
-    width: 45%;
-    height: 70%;
+    width: 45vw;
+    height: 90vh;
 
     padding: 2em;
 
@@ -100,24 +100,30 @@ table button{
     margin-left: 20px;
 
     width: 90%;
+    outline:none; /*Tira a borda ao clicar no input*/
 }
 
 .salvar{
     margin-top: 10%;
-}
 
-button{
-    width: 30%;
-    height: 25%;
+    display: flex;
+    flex-direction: column;
 
-    padding: 0.5em;
+    margin: auto;
+
+    width: 20vw;
+    height: 5vh;
+
+    padding: 0.5rem;
+
+    align-items: center;
+    font-size: 16px;
+    color: aliceblue;
 
     background: #0D0D0D;
-    color: aliceblue;
 
     border-radius: 5px;
 
     cursor: pointer;
-
-    margin:auto;
 }
+

@@ -8,12 +8,12 @@ div{
     display: flex;
     flex-direction: column;
 
-    background: rgb(251, 251, 251);
+    background: rgb(241, 241, 241);
+
+    width: 45vw;
+    height: 90vh;
+
     padding: 2em;
-
-    width: 155%;
-    height: 150%;
-
     margin-top: 50px;
 
     border-radius: 5px;
@@ -67,23 +67,31 @@ h2{
     margin-top: 20px;
     margin-left: 20px;
 
+    outline:none; /*Tira a borda ao clicar no input*/
     width: 85%;
 }
 
 .removeProd{
-    margin-top: 50px;
     padding: 2rem;
 }
 
 .removeProd button{
-    width: 50%;
-    height: 25%;
+    display: flex;
+    flex-direction: column;
 
-    padding: 0.5em;
     margin: auto;
+    margin-right: 30%;
+
+    width: 20vw;
+    height: 5vh;
+
+    padding: 0.5rem;
+
+    align-items: center;
+    font-size: 16px;
+    color: aliceblue;
 
     background: #0D0D0D;
-    color: aliceblue;
 
     border-radius: 5px;
 
