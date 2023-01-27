@@ -11,7 +11,7 @@ div{
     background: rgb(241, 241, 241);
 
     width: 45vw;
-    height: 90vh;
+    height: auto;
 
     padding: 2em;
     margin-top: 50px;
@@ -83,7 +83,7 @@ h2{
     margin-right: 30%;
 
     width: 20vw;
-    height: 5vh;
+    height: auto;
 
     padding: 0.5rem;
 
