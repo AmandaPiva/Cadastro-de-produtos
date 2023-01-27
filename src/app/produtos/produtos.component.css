@@ -7,6 +7,7 @@ body{
     max-height: 100%;
     width: auto;
     height: auto;
+
 }
 
 h2{
@@ -51,6 +52,7 @@ table button{
 
     margin-top: 16%;
     margin-right: 8%;
+    margin-bottom: 5vw;
 
     float: right;
 
@@ -61,7 +63,7 @@ table button{
 
     padding: 2em;
 
-    box-shadow: 8px 8px 8px #a9aaac
+    box-shadow: 8px 8px 8px #a9aaac;
 }
 
 .create h2{
